@@ -211,6 +211,12 @@ input {
   cursor: pointer;
 }
 
+.inputs .label:active {
+  background-color: greenyellow;
+  box-shadow: .2rem .2rem 2rem;
+  cursor: pointer;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
