@@ -1,0 +1,260 @@
+@import url(https://fonts.googleapis.com/css?family=Radio+Canada:300,regular,500,600,700);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Radio Canada';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__title {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+input {
+  display: none;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  width: 56vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.pics {
+  width: 900%;
+  display: flex;
+  margin-bottom: 50px;
+  transition: 0.2s all ease-in-out;
+}
+
+.rect {
+  height: 54vh;
+  width: 56vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2rem solid darkmagenta; */
+}
+
+.rect img {
+  /* width: 100%; */
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.n1 {
+  background-color: yellow;
+}
+
+.n2 {
+  background-color: palevioletred;
+}
+
+.n3 {
+  background-color: greenyellow;
+}
+
+.n4 {
+  background-color: aquamarine;
+}
+
+.n5 {
+  background-color:rgb(252, 151, 210);
+}
+
+.n6 {
+  background-color:gold;
+}
+
+.n7 {
+  background-color: azure;
+}
+
+.n8 {
+  background-color:yellowgreen;
+}
+
+.n9 {
+  background-color:yellow;
+}
+
+#img0:checked~.pics>.rect,
+#img0:checked~.bottom > .text> .text__wrapper > .txt__title {
+  transform: translateX(0);
+  transition: all 0.2s;
+}
+
+#img1:checked~.pics>.rect,
+#img1:checked~.bottom > .text> .text__wrapper > .txt__title {
+  transform: translateX(-100%);
+  transition: all 0.2s;
+}
+
+#img2:checked~.pics>.rect,
+#img2:checked~.bottom > .text> .text__wrapper > .txt__title {
+  transform: translateX(-200%);
+  transition: all 0.2s ease-in-out;
+}
+
+#img3:checked~.pics>.rect,
+#img3:checked~.bottom > .text> .text__wrapper > .txt__title {
+  transform: translateX(-300%);
+  transition: all 0.2s ease-in-out;
+}
+
+#img4:checked~.pics>.rect,
+#img4:checked~.bottom > .text> .text__wrapper > .txt__title {
+  transform: translateX(-400%);
+  transition: all 0.2s ease-in-out;
+}
+
+#img5:checked~.pics>.rect,
+#img5:checked~.bottom > .text> .text__wrapper > .txt__title {
+  transform: translateX(-500%);
+  transition: all 0.2s ease-in-out;
+}
+
+#img6:checked~.pics>.rect,
+#img6:checked~.bottom > .text> .text__wrapper > .txt__title {
+  transform: translateX(-600%);
+  transition: all 0.2s ease-in-out;
+}
+
+#img7:checked~.pics>.rect,
+#img7:checked~.bottom > .text> .text__wrapper > .txt__title {
+  transform: translateX(-700%);
+  transition: all 0.2s ease-in-out;
+}
+
+#img8:checked~.pics>.rect,
+#img8:checked~.bottom > .text> .text__wrapper > .txt__title {
+  transform: translateX(-800%);
+  transition: all 0.2s ease-in-out;
+}
+
+#img0:checked~.bottom > .inputs>.inp0>div {
+  background-color: aquamarine;
+}
+
+#img1:checked~.bottom > .inputs>.inp1>div {
+  background-color: aquamarine;
+}
+
+#img2:checked~.bottom > .inputs>.inp2>div {
+  background-color: aquamarine;
+}
+
+#img3:checked~.bottom > .inputs>.inp3>div {
+  background-color: aquamarine;
+}
+
+#img4:checked~.bottom > .inputs>.inp4>div {
+  background-color: aquamarine;
+}
+
+#img5:checked~.bottom > .inputs>.inp5>div {
+  background-color: aquamarine;
+}
+
+#img6:checked~.bottom > .inputs>.inp6>div {
+  background-color: aquamarine;
+}
+
+#img7:checked~.bottom > .inputs>.inp7>div {
+  background-color: aquamarine;
+}
+
+#img8:checked~.bottom > .inputs>.inp8>div {
+  background-color: aquamarine;
+}
+
+
+.bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  width: 50%;
+}
+.text__wrapper {
+  width: 1800%;
+  display: flex;
+}
+
+.txt__title {
+  width: 100%;
+  background-color: #fff;
+  color: darkmagenta;
+  font-size: 26px;
+  font-style: italic;
+  line-height: 40px;
+}
+
+.borders {
+  width: 50%;
+}
+
+.inputs {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 20;
+}
+
+.inputs label {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.inputs .label {
+  display: block;
+  padding: 5px;
+  border: 5px solid aqua;
+  border-radius: 50%;
+}
+
+.inputs label:hover {
+  cursor: pointer;
+}
+
+.inputs .label:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.rs {
+  width: 150px;
+
+}
+@media  (max-width: 767px) {
+  .pics {
+    order: 1;
+  }
+  .inputs {
+    order: 2;
+  }
+  .text {
+     order: 3;
+  }
+}
