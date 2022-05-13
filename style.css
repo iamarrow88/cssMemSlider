@@ -159,6 +159,7 @@ input {
 }
 
 .text {
+  order: 1;
   width: 50%;
 }
 .text__wrapper {
@@ -180,11 +181,13 @@ input {
 }
 
 .inputs {
+  order: 2;
   width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   z-index: 20;
+  margin-bottom: 2rem;
 }
 
 .inputs label {
