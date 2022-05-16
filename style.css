@@ -169,6 +169,7 @@ input {
 
 .text .txt__title {
   width: 100%;
+  height: 2rem;
   background-color: #fff;
   color: darkmagenta;
   font-size: 1.5rem;
@@ -178,11 +179,13 @@ input {
 
 .borders {
   width: 50%;
+  line-height: 2rem;
 }
 
 .inputs {
   order: 2;
   width: 50%;
+  height: 2rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
